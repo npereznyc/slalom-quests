@@ -1,9 +1,9 @@
 function createQuoteSection() {
-    const section = document.createElement('section')
-    const article = document.createElement('article')
-    const p = document.createElement('p')
-    const span = document.createElement('span')
-    const div = document.createElement('div')
+    const section: HTMLElement = document.createElement('section')
+    const article: HTMLElement = document.createElement('article')
+    const p: HTMLParagraphElement = document.createElement('p')
+    const span: HTMLSpanElement = document.createElement('span')
+    const div: HTMLDivElement = document.createElement('div')
 
     section.id = 'quote'
     article.id = 'text'

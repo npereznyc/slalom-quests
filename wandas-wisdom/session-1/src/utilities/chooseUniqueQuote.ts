@@ -1,9 +1,10 @@
 import selectRandomQuote from './selectRandomQuote'
 import checkIfIdentical from './checkIfIdentical'
+import Quote from '../types'
 
-function chooseUniqueQuote(oldText, allQuotes) {
-    const newQuote = selectRandomQuote(allQuotes)
-    const newText = newQuote.text
+function chooseUniqueQuote(oldText: string, allQuotes: Quote[]) {
+    const newQuote: Quote = selectRandomQuote(allQuotes)
+    const newText: string = newQuote.text
     const isIdentical = checkIfIdentical(oldText, newText)
 
     if (!isIdentical) {

@@ -3,7 +3,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
     devtool: 'inline-source-map',
-	entry: './src/app.js',
+	entry: './src/app.ts',
 	output: {
 		filename: 'main.js',
 		path: path.resolve(__dirname, 'dist')
